@@ -1,0 +1,8 @@
+import os # import the os library
+os.chdir('C:/Users/koffi/Documents/Downloads/Technical Assessment_KoffiAgbavon/Technical Assessment_KoffiAgbavon/Assessment One')
+os.getcwd()# get the current working directory to confirme the change
+import pandas #import the pandas data analysis library
+import snappy
+compressed=open('Source_1').read()
+snappy.uncompressed(compressed)
+data=pandas.read_csv('Source_1.snappy')
